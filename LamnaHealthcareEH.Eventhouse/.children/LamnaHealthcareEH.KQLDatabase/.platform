@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "KQLDatabase",
+    "displayName": "LamnaHealthcareEH",
+    "description": "LamnaHealthcareEH"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5f844a8c-c30b-a9d3-4b5e-6c9ec97796ea"
+  }
+}

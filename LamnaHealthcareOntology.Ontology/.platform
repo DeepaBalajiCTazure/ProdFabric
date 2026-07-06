@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Ontology",
+    "displayName": "LamnaHealthcareOntology"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "754cf278-0670-81d8-499e-d743f0dd4967"
+  }
+}

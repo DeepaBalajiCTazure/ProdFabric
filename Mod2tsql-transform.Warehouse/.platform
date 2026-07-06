@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Warehouse",
+    "displayName": "Mod2tsql-transform",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "439e10ad-d2b6-b20d-4691-1d3ff785fb94"
+  }
+}

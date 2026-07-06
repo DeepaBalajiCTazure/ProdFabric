@@ -1,0 +1,42 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "f360a335-f3c4-4aea-92ce-4bad475d9511",
+  "dataBindingConfiguration": {
+    "dataBindingType": "TimeSeries",
+    "timestampColumnName": "Timestamp",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "EquipmentId",
+        "targetPropertyId": "9173131816729371882"
+      },
+      {
+        "sourceColumnName": "HeartRate",
+        "targetPropertyId": "9210286447111745829"
+      },
+      {
+        "sourceColumnName": "OxygenSaturation",
+        "targetPropertyId": "9210286446747543734"
+      },
+      {
+        "sourceColumnName": "ReadingId",
+        "targetPropertyId": "9210286445124596433"
+      },
+      {
+        "sourceColumnName": "RespiratoryRate",
+        "targetPropertyId": "9210286448076213092"
+      },
+      {
+        "sourceColumnName": "Timestamp",
+        "targetPropertyId": "9210286445746922713"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "KustoTable",
+      "workspaceId": "00000000-0000-0000-0000-000000000000",
+      "itemId": "dfdb5fc3-5b57-91cd-4410-31467fe0e5fc",
+      "clusterUri": "https://trd-mnqe31gfv0a3upzdmg.z4.kusto.fabric.microsoft.com",
+      "databaseName": "LamnaHealthcareEH",
+      "sourceTableName": "VitalSignsReadings"
+    }
+  }
+}

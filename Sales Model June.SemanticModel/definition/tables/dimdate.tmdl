@@ -1,0 +1,80 @@
+table dimdate
+	lineageTag: 37b73354-3cc7-4223-abbf-ca8d200c43da
+	sourceLineageTag: [dbo].[dimdate]
+
+	column DateKey
+		dataType: int64
+		formatString: 0
+		lineageTag: db169deb-8d87-48b0-b611-f260a57f6947
+		sourceLineageTag: DateKey
+		summarizeBy: none
+		sourceColumn: DateKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullDate
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 12444a46-dc11-4887-9bdf-cc319d4e972c
+		sourceLineageTag: FullDate
+		summarizeBy: none
+		sourceColumn: FullDate
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 33ee296f-a01f-4227-8b7c-7625cf4d2644
+		sourceLineageTag: Year
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: f8ccfa43-3099-44a9-805c-19436248e658
+		sourceLineageTag: Quarter
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: a75eb14f-d0e8-48f7-a5f8-4260e66c6353
+		sourceLineageTag: Month
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthName
+		dataType: string
+		lineageTag: 6f007972-ba0d-4846-9180-d8808a700c86
+		sourceLineageTag: MonthName
+		summarizeBy: none
+		sourceColumn: MonthName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: 648cf341-1b17-4a93-ae45-4a1137bce81b
+		sourceLineageTag: Day
+		summarizeBy: none
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimdate = entity
+		mode: directLake
+		source
+			entityName: dimdate
+			schemaName: dbo
+			expressionSource: 'DirectLake - SalesLakehouse'
+

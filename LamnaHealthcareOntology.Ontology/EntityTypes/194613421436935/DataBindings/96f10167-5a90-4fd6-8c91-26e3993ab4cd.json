@@ -1,0 +1,32 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/dataBinding/1.0.0/schema.json",
+  "id": "96f10167-5a90-4fd6-8c91-26e3993ab4cd",
+  "dataBindingConfiguration": {
+    "dataBindingType": "NonTimeSeries",
+    "propertyBindings": [
+      {
+        "sourceColumnName": "RoomId",
+        "targetPropertyId": "9173132117775022456"
+      },
+      {
+        "sourceColumnName": "RoomNumber",
+        "targetPropertyId": "9173132145140096467"
+      },
+      {
+        "sourceColumnName": "DepartmentId",
+        "targetPropertyId": "9173132166176942792"
+      },
+      {
+        "sourceColumnName": "RoomType",
+        "targetPropertyId": "9173132189886167477"
+      }
+    ],
+    "sourceTableProperties": {
+      "sourceType": "LakehouseTable",
+      "workspaceId": "ddd7637e-f578-4439-b0d0-5a872019ac54",
+      "itemId": "e76b0286-35dd-44fb-8fe3-02811150212e",
+      "sourceTableName": "rooms",
+      "sourceSchema": "dbo"
+    }
+  }
+}

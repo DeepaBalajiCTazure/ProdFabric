@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/ontology/contextualization/1.0.0/schema.json",
+  "id": "f2e38612-35e3-46a9-90e7-bd35a0f741f1",
+  "dataBindingTable": {
+    "workspaceId": "ddd7637e-f578-4439-b0d0-5a872019ac54",
+    "itemId": "e76b0286-35dd-44fb-8fe3-02811150212e",
+    "sourceTableName": "departments",
+    "sourceSchema": "dbo",
+    "sourceType": "LakehouseTable"
+  },
+  "sourceKeyRefBindings": [
+    {
+      "sourceColumnName": "DepartmentId",
+      "targetPropertyId": "9173132238920759520"
+    }
+  ],
+  "targetKeyRefBindings": [
+    {
+      "sourceColumnName": "HospitalId",
+      "targetPropertyId": "9173132473576995115"
+    }
+  ]
+}

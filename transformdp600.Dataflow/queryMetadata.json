@@ -1,0 +1,34 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowModernEvaluationEngine": true
+  },
+  "name": "transformdp600",
+  "queryGroups": [],
+  "documentLocale": "en-US",
+  "queriesMetadata": {
+    "orders": {
+      "queryId": "1d93071d-d56e-4d15-9275-2596e0ca7226",
+      "queryName": "orders",
+      "loadEnabled": false
+    },
+    "orders_DataDestination": {
+      "queryId": "19494bc9-cdbf-4e1d-a7b2-32dd9811f375",
+      "queryName": "orders_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv",
+      "kind": "Web",
+      "connectionId": "{\"ClusterId\":\"afcdc56a-67ba-4ca4-a88a-8b18660dfbd8\",\"DatasourceId\":\"7d920f9c-32e8-4096-9298-df655660372d\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"afcdc56a-67ba-4ca4-a88a-8b18660dfbd8\",\"DatasourceId\":\"27036c45-752a-4130-9ed4-b9986e60a489\"}"
+    }
+  ]
+}

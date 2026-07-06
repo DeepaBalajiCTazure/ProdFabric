@@ -1,0 +1,57 @@
+table dimcustomer
+	lineageTag: cd45194e-7a76-4e1e-b5b5-e4b6a0fd6b99
+	sourceLineageTag: [dbo].[dimcustomer]
+
+	column CustomerKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 1be5dafb-0cc0-4bfc-9358-fd6842b0831d
+		sourceLineageTag: CustomerKey
+		summarizeBy: none
+		sourceColumn: CustomerKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column CustomerName
+		dataType: string
+		lineageTag: e088c10d-1981-46d4-93e9-ed101703284a
+		sourceLineageTag: CustomerName
+		summarizeBy: none
+		sourceColumn: CustomerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 90a7f5e2-6f63-49e9-b974-c15a52c39e5c
+		sourceLineageTag: City
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 52b7d6ff-67f3-49da-8fbd-fdf850499c8b
+		sourceLineageTag: Region
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 1d92253e-04a3-4de2-b6a3-a5b72099c4f0
+		sourceLineageTag: Country
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	partition dimcustomer = entity
+		mode: directLake
+		source
+			entityName: dimcustomer
+			schemaName: dbo
+			expressionSource: 'DirectLake - SalesLakehouse'
+

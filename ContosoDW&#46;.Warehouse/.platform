@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Warehouse",
+    "displayName": "ContosoDW.",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "82dbd264-3537-8837-47ab-b07dac84a38a"
+  }
+}

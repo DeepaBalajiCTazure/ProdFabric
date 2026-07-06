@@ -1,0 +1,20 @@
+relationship 57a32441-db62-0d5d-51d9-d446fc1e3787
+	crossFilteringBehavior: bothDirections
+	fromColumn: departments.HospitalId
+	toColumn: hospitals.HospitalId
+
+relationship 36e2f8e1-56f5-eaa4-a015-42da0baf0a52
+	crossFilteringBehavior: bothDirections
+	fromColumn: rooms.DepartmentId
+	toColumn: departments.DepartmentId
+
+relationship 146e1b3c-a075-df5a-75a9-bbeadfae0def
+	crossFilteringBehavior: bothDirections
+	fromColumn: rooms.RoomId
+	toColumn: patients.CurrentRoomId
+
+relationship edf228fd-7e5f-685e-c8ce-ee99ad86b338
+	crossFilteringBehavior: bothDirections
+	fromColumn: vitalsignequipment.PatientId
+	toColumn: patients.PatientId
+
